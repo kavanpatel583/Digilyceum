@@ -1,0 +1,89 @@
+<ion-view title="signup">
+  <ion-nav-bar class="bar-positive set-nav-color" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button-clear set-btn-color" ng-click="goBack()">
+        <i class="icon ion-arrow-left-c"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content padding="true">
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="number" placeholder="enrollment number" ng-model="enrollment_number" ng-keyup="getStudentData(enrollment_number)">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="firstname" ng-model="user.first_name" >
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="lastname" ng-model="user.last_name">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="email" placeholder="email" ng-model="user.email">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="password" placeholder="password" ng-model="user.password">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="password" placeholder="conform password" ng-model="user.conform_password">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100 ">
+        <label class="item item-input item-select set-input-border">
+          <div class="input-label">
+            branch
+          </div>
+          <select ng-model="user.branch">
+            <option selected>computer engineering</option>
+            <option>civil engineering</option>
+            <option>electrical engineering </option>
+            <option>mechanical engineering </option>
+            <option>chemical engineering </option>
+            <option>information technology</option>
+            <option>instrumentation and control technology</option>
+            <option>Electronic and communication engineering </option>
+            <option>textile engineering</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-100">
+        <button class="button button-positive button-block set-input-border" id="login-button9" ng-click="signwithEmail(user,enrollment_number)">signup</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-50">
+        <button class="button button-positive ripple button-block icon-left ion-social-facebook fb-button set-input-border"
+          id="login-button9" ng-click="loginwithFacebook()">Facebook login</button>
+      </div>
+      <div class="col col-50">
+        <button class="button button-assertive ripple button-block icon-left ion-social-google google-button set-input-border"
+          ng-click="loginwithGoogle()">Google login</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

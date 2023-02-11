@@ -1,0 +1,54 @@
+<ion-view title="Host Election" id="hostelection">
+  <ion-nav-bar class="bar-positive set-nav-color" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button-clear set-btn-color" ng-click="goBack()">
+        <i class="icon ion-arrow-left-c"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content padding="true">
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Select Branch
+      </div>
+      <select ng-model="data.branch">
+        <option selected>computer engineering</option>
+        <option>civil engineering</option>
+        <option>electrical engineering </option>
+        <option>mechanical engineering </option>
+        <option>chemical engineering </option>
+        <option>information technology</option>
+        <option>instrumentation and control technology</option>
+        <option>Electronic and communication engineering </option>
+        <option>textile engineering</option>
+      </select>
+    </label>
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Select Semester
+      </div>
+      <select ng-model="data.sem">
+        <option>1</option>
+        <option selected>3</option>
+        <option>5</option>
+        <option>7</option>
+      </select>
+    </label>
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Select Batch
+      </div>
+      <select ng-model="data.batch">
+        <option>Morning</option>
+        <option selected>Evening</option>
+      </select>
+    </label>
+    <div class="row">
+      <div class="col col-100">
+        <button class="button button-positive button-block" ng-click="startElection(data)">start election</button>
+      </div>
+    </div>
+   
+
+  </ion-content>
+</ion-view>

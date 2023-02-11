@@ -1,0 +1,79 @@
+<ion-side-menus data-componentid="side-menu21" enable-menu-with-back-views="false" ng-controller="StartPageCtrl">
+  <ion-side-menu-content enable-menu-with-back-views="true">
+    <ion-nav-bar class="bar-positive set-nav-color">
+      <ion-nav-back-button class="button-clear set-btn-color" ng-click="goBack()">
+        <i class="icon ion-arrow-left-c"></i>
+      </ion-nav-back-button>
+      <ion-nav-title>
+        <div class="center sliding">
+          <h4 class="headertxt">Digilyceum</h4>
+        </div>
+      </ion-nav-title>
+      <ion-nav-buttons>
+        <button class="button button-icon button-clear set-btn-color" menu-toggle="left">
+          <i class="icon ion-navicon-round" aria-hidden="true"></i>
+        </button>
+      </ion-nav-buttons>
+      <!-- <ion-nav-buttons side="right">
+                    <button class="button button-icon button-clear" ng-click="login();"><i class="icon ion-person-stalker" aria-hidden="true"></i></button>
+                  </ion-nav-buttons> -->
+    </ion-nav-bar>
+    <ion-nav-view></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu id="side-menu21" side="left">
+    <ion-header-bar class="bar-positive set-nav-color">
+      <div class="title sidebar-header" ng-click="gotoHome();" menu-close="">Menu</div>
+    </ion-header-bar>
+    <ion-content class="stable-bg">
+      <!-- class="side-menu-left has-header" padding="false" -->
+      <ion-list data-componentid="list1" class="side_menu" id="menu-list1">
+        <ion-item data-componentid="list-item1" menu-close="" ng-click="dashBoard()" id="menu-list-item1" class="item-icon-left side-menu-bg">
+          <i class="icon ion-ios-home"></i>Dashboard
+          <i class="icon ion-ios-arrow-right menu-right-arrow"></i>
+        </ion-item>
+        <ion-item data-componentid="list-item1" menu-close="" ng-click="goToSignUpPage()" id="menu-list-item7" class="item-icon-left side-menu-bg"
+          ng-show="!currentUser">
+          <i class="icon ion-person-add"></i>Sign Up
+          <i class="icon ion-ios-arrow-right menu-right-arrow"></i>
+        </ion-item>
+        <ion-item data-componentid="list-item2" menu-close="" ng-click="login()" id="menu-list-item2" class="item-icon-left side-menu-bg"
+          ng-show="!currentUser">
+          <i class="icon ion-log-in"></i>Sign In
+          <i class="icon ion-ios-arrow-right menu-right-arrow"></i>
+        </ion-item>
+        <ion-item data-componentid="list-item2" menu-close="" ng-click="goToMyAccountPage()" id="menu-list-item2" class="item-icon-left side-menu-bg"
+          ng-show="currentUser">
+          <i class="icon ion-person"></i>My Account
+          <i class="icon ion-ios-arrow-right menu-right-arrow"></i>
+        </ion-item>
+        <!-- <div class="spacer" style="width: 268px; height: 31px;" data-componentid="spacer12"></div> -->
+        <!-- <ion-item data-componentid="list-item3" menu-close="" ng-click="goToCreateNewStore()" id="menu-list-item3" class="item-icon-left side-menu-bg"
+                    ng-if="!!currentUser && currentUser.user_type==='store_user'">
+                    <i class="icon ion-android-playstore"></i>Create New Store
+                    <i class="icon ion-ios-arrow-right menu-right-arrow"></i>
+                </ion-item> -->
+        <!-- <ion-item data-componentid="list-item4"  menu-close="" ng-click="venueEventSetup()" id="menu-list-item4" class="item-icon-left side-menu-bg" ng-if="!!currentUser && currentUser.user_type==='store_user'">
+                        <i class="icon ion-clipboard"></i>Setup New Store Event
+                        <i class="icon ion-ios-arrow-right menu-right-arrow"></i>
+                    </ion-item>
+                    <ion-item data-componentid="list-item5"  menu-close="" ng-click="venueEvents()"  id="menu-list-item5" class="item-icon-left side-menu-bg" ng-if="!!currentUser && currentUser.user_type==='store_user'" >
+                        <i class="icon ion-android-calendar" ></i>Manage Store Events
+                        <i class="icon ion-ios-arrow-right menu-right-arrow"></i>
+                    </ion-item> -->
+        <ion-item data-componentid="list-item8" menu-close="" id="menu-list-item8" class="item-icon-left side-menu-bg" ng-click="logout()"
+          ng-show="!!currentUser">
+          <i class="icon ion-log-out"></i>Logout
+          <i class="icon ion-ios-arrow-right menu-right-arrow"></i>
+        </ion-item>
+        <!-- <ion-item data-componentid="list-item7" id="menu-list-item7"  ng-click="logout()"  class="item-icon-left">
+                        <i class="icon ion-log-out"></i>Logout</ion-item> -->
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+  <!-- <a class="button button-royal button-block" id="options-button42" ui-sref="regionalSignup()" data-componentid="button42" menu-close="">Regional Sign Up</a>
+            <a class="button button-royal button-block" id="options-button43" ui-sref="regionalEventSetup()" data-componentid="button43" menu-close="">Setup New Regional Event</a>
+            <a class="button button-royal button-block" id="options-button44" ui-sref="regionalEvents()" data-componentid="button44" menu-close="">Manage Regional Events</a> -->
+  <!-- </ion-content> -->
+
+
+  <!-- Status bar overlay for fullscreen mode-->

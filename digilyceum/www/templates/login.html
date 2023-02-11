@@ -1,0 +1,52 @@
+<ion-view hide-nav-bar="true" id="login">
+
+  <ion-content>
+    <div class="row set-margin">
+      <div class="col col-100 textcenter">
+        <h3>Digilyceum</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="number" placeholder="enrollment number" ng-model="user.enrollment_number">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="password" placeholder="password" ng-model="user.password">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <a ng-click="forgotpassword()" class="pull-right">Forgot Password?</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <button class="button button-positive button-block set-input-border" id="login-button9" ng-click="loginwithEmail(user)">login</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-50">
+        <button class="button button-positive ripple button-block icon-left ion-social-facebook fb-button set-input-border" id="login-button9"
+          ng-click="loginwithFacebook()">Facebook login</button>
+      </div>
+      <div class="col col-50">
+        <button class="button button-assertive ripple button-block icon-left ion-social-google google-button set-input-border" ng-click="loginwithGoogle()">Google login</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100 textcenter">
+        <p ng-click="goToSignUpPage()">Don’t have an account?
+          <a data-popup=".popup-register" class="open-popup">Sign Up</a>
+        </p>
+      </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>

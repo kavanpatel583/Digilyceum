@@ -1,0 +1,189 @@
+<ion-view title="chatbot">
+  <ion-nav-bar class="bar-positive set-nav-color" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button-clear set-btn-color" ng-click="goBack()">
+        <i class="icon ion-arrow-left-c"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content padding="true">
+
+    <!-- <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="firstname" ng-model="user.first_name">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="lastname" ng-model="user.last_name">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="email" placeholder="email" ng-model="user.email">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="number" placeholder="phone no" ng-model="user.phone_no">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="number" placeholder="enrollment number" ng-model="user.enrollment_number">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="gender" ng-model="user.gender">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="city" ng-model="user.city">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="state" ng-model="user.state">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="number" placeholder="pincode" ng-model="user.pincode">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="number" placeholder="adhar no" ng-model="user.adhar_no">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="date of birth" ng-model="user.date_of_birth">
+        </label>
+      </div>
+    </div> -->
+    <!-- <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="password" placeholder="password" ng-model="user.password">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="password" placeholder="conform password" ng-model="user.conform_password">
+        </label>
+      </div>
+    </div> -->
+    <!-- <div class="row">
+      <div class="col col-100 ">
+        <label class="item item-input item-select set-input-border">
+          <div class="input-label">
+            branch
+          </div>
+          <select ng-model="user.branch">
+            <option selected>computer engineering</option>
+            <option>civil engineering</option>
+            <option>electrical engineering </option>
+            <option>mechanical engineering </option>
+            <option>chemical engineering </option>
+            <option>information technology</option>
+            <option>instrumentation and control technology</option>
+            <option>Electronic and communication engineering </option>
+            <option>textile engineering</option>
+          </select>
+        </label>
+      </div>
+    </div> -->
+
+
+   <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="number" placeholder="enrollment number" ng-model="user.enrollment_number">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="branch" ng-model="user.branch">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="semester" ng-model="user.semester">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="cgpa" ng-model="user.cgpa">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="cpi" ng-model="user.cpi">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="spi" ng-model="user.spi">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="attendance" ng-model="user.attendence">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-100">
+        <label class="item item-input set-input-border">
+          <input type="text" placeholder="fee payment" ng-model="user.fee_payment">
+        </label>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col col-100">
+        <button class="button button-positive button-block set-input-border" id="login-button9" ng-click="storedata(user)">store</button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,52 @@
+<ion-modal-view>
+    <ion-nav-bar class="bar-positive set-nav-color" align-title="center">
+        <ion-nav-buttons side="left">
+          <button class="button-clear set-btn-color" ng-click="closeFeedbackModal()">
+            <i class="icon ion-arrow-left-c"></i>
+          </button>
+        </ion-nav-buttons>
+        <ion-nav-title class="set-modal-nav-title-color">Complain</ion-nav-title>
+      </ion-nav-bar>
+    <!-- <ion-nav-bar class="bar-positive" align-title="center">
+         <ion-nav-buttons side="left">
+            <button class="button button-clear button-positive set-btn-color" ng-click="closeFeedbackModal()">
+                <i class="icon ion-arrow-left-c"></i>
+            </button>
+        </ion-nav-buttons>
+        <ion-nav-title class="set-modal-nav-title-color">Complain</ion-nav-title>
+    </ion-nav-bar> -->
+    <ion-content padding="true" class="has-header">
+        <div class="row">
+            <div class="col col-100 list list-inset set-font-size-18">
+                Email:
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-100 list list-inset margin-top-0">
+                <label class="item item-input set-border-radius-10">
+                    <input type="email" placeholder="Email" ng-model="data.email">
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-100 list list-inset set-font-size-18">
+                Comment:
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-100 list list-inset margin-top-0">
+                <label class="item item-input set-border-radius-10">
+                    <textarea class="set-textarea-height" type="text" ng-model="data.message"></textarea>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-positive dark-gray-btn button-block" ng-click="closeFeedbackModal()">Cancel</button>
+            </div>
+            <div class="col">
+                <button class="button button-positive set-red-btn-color button-block" ng-click="closeFeedbackModal()">Submit</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

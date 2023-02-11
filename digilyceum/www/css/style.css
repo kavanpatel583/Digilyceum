@@ -1,0 +1,171 @@
+/* Empty. Add your own CSS if you like */
+
+.set-nav-color {
+  background-color: #7ec23a !important;
+  background-image: linear-gradient(99deg, #7ec23a, #429321) !important;
+}
+
+.set-btn-color{
+  background-color: #7ec23a !important;
+}
+
+.set-input-border {
+  border-radius: 25px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+#login .set-margin {
+  margin-top: 45%;
+}
+
+.my-wines {
+  padding: 2px;
+  height: 160px;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #7ec23a !important;
+  background-image: linear-gradient(99deg, #7ec23a, #429321) !important;
+  border-radius: 10px;
+  /* box-shadow: 4px 4px 4px; */
+}
+/* .my-wines:active {
+  background-color: #3e8e41;
+  box-shadow: 0 #666;
+  transform: translateY(3px);
+} */
+.set-btn-color {
+  color: white !important;
+}
+
+.set-icon-size {
+  font-size: 75px;
+}
+
+.set-icon-position {
+  margin-top: 20px;
+}
+
+.set-label-position {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.roundbutton {
+  font-size: 30px;
+  border-radius: 35px;
+  width: 43px;
+  background-color: white;
+  border: none;
+  color: black;
+  margin: 0 auto !important;
+}
+
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.btn-image-center {
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  height: 100px;
+}
+
+.imgStyle {
+  height: 70px;
+  width: 70px;
+}
+
+.set-margin-top-17 {
+  margin-top: 17px;
+}
+
+#crdetails .set-margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.set-btn-width {
+  width: 150px;
+}
+
+.marign-tp-10 {
+  margin-top: 10px !important;
+}
+
+.padding-left-5 {
+  padding-left: 5px;
+}
+
+.bg-terms {
+  border: none !important;
+}
+
+.set-host-view-size {
+  font-size: 43px;
+}
+
+.set-color-green {
+  color: green;
+}
+
+.event-border-style {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.padding-left-13 {
+  padding-left: 13px;
+}
+.popup-open .popup{
+  border-radius: 12px;
+}
+.otp-text {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.set-width-100{
+  width:100%;
+}
+
+.margin-top-20{
+  margin-top:20px;
+}
+.set-otp-input-border{
+  border-bottom:1px solid black !important;
+}
+
+.set-margin-right-auto{
+  margin-left:auto;
+  margin-right:auto;
+}
+.set-border-radius-10 {
+  border-radius: 10px !important;
+}
+.margin-top-0 {
+  margin-top: 0px !important;
+}
+.set-textarea-height {
+  height: 160px !important;
+}

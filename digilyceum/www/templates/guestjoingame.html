@@ -1,0 +1,135 @@
+<ion-view view-title="{{waitingforplayer}}" id="guest_join_game" ng-init="waitingplayer()" ng-style="setbgcolor">
+  <ion-nav-bar class="bar-positive set-nav-color" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button-clear set-btn-color" ng-click="goBack()">
+        <i class="icon ion-arrow-left-c"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <!-- <ion-nav-title ng-if="waitingforplayer==true">Waiting Area</ion-nav-title>
+    <ion-nav-title ng-show="waitingforplayer==true">xyz</ion-nav-title>
+    <ion-nav-title ng-hide="waitingforplayer==true">Wine Acuity</ion-nav-title> -->
+  <ion-content class="has-header" padding="true">
+
+    <div class="row" ng-if="game.state=='joinGame'">
+      <div class="col-md-6 col-md-offset-3">
+        <form>
+          <div class="form-group">
+            <label for="screenName">Your name</label>
+            <input ng-model="screenName" type="text" class="form-control" id="screenName" placeholder="Choose a screen name">
+          </div>
+
+          <button type="submit" ng-if="!joining" class="btn btn-primary btn-lg" ng-click="join()">Join</button>
+          <button class="btn btn-primary btn-lg" ng-disabled="true" ng-if="joining">
+            Joining game..
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row" ng-if="game.state=='waitingForPlayers'">
+      <div class="col">
+        <h1>Hi {{game.users[playerId].screen_name}}</h1>
+        <h3>We're waiting for everyone else to join.</h3>
+      </div>
+
+    </div>
+
+    <div class="row" ng-if="game.state=='preQuestion'">
+      <div class="col col-100">
+        <h3>Get Ready...!</h3>
+      </div>
+    </div>
+
+    <div class="row" ng-if="game.state=='verification' && game.users[playerId].status!='Verify'">
+       <div class="col">
+         <div class="row">
+           <div class="col col-100 textcenter">
+              <h4>Please enter the 4 digit code you received</h4>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col col-100">
+              <input class="otp-text set-otp-input-border textcenter set-margin-right-auto" type="tel" ng-model="otp.code">
+           </div>
+         </div>
+         <div class="row margin-top-20">
+           <div class="col col-50">
+             <button class="button button-positive set-btn-color set-width-100">Send Again</button>
+           </div>
+           <div class="col col-50">
+              <button class="button button-positive set-btn-color set-width-100" ng-click="verifyUserOtp(otp.code)">Verify</button>
+           </div>
+         </div>
+       </div>
+    </div>
+    <div class="row" ng-if="game.state=='verification' && game.users[playerId].status=='Verify'">
+      <div class="col">
+        <div class="row">
+          <div class="col col-100">
+             <h4>Please waiting for other user verification</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" ng-if="game.state=='question' && submitanswer==0">
+      <div class="col col-100">
+        <ul class="list">
+          <li class="item item-checkbox checkbox-balanced" ng-repeat="cr in game.questions">
+            {{cr.first_name}} {{cr.last_name}}
+            <label class="checkbox">
+              <input type="checkbox" ng-model=game.questions[$index].vote[playerId]>
+            </label>
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col col-50">
+
+          </div>
+          <div class="col col-50">
+            <button class="button button-positive button-block " ng-click="finishElection()">FINISHED!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" ng-if="submitanswer==1  && game.state=='question' ">
+      <div class="col col-100">
+        <h3>
+          Your vote have been submitted to your host!
+        </h3>
+        <h3>
+          Please wait until the Host stops the election and then you will see election results!
+        </h3>
+      </div>
+    </div>
+    <div class="row" ng-show="game.state == 'leaderboard'">
+      <div class="col col-100">
+        <div class="row event-border-style">
+          <div class="col col-80">
+            <h4>Candidate</h4>
+          </div>
+          <div class="col col-20">
+            <h4>Vote</h4>
+          </div>
+        </div>
+        <div class="row event-border-style" ng-repeat="candidate in candidates">
+          <div class="col col-80">
+            {{candidate.first_name}} {{candidate.last_name}}
+          </div>
+          <div class="col col-20 padding-left-13">
+            {{candidate.totalvote}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-100">
+            <button class="button button-positive button-block" id="newWineList-button16" ng-click="goToHomePage()">Main
+              Menu
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>

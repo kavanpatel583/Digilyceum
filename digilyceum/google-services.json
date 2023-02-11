@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "374030441897",
+    "firebase_url": "https://digilyceum-15c27.firebaseio.com",
+    "project_id": "digilyceum-15c27",
+    "storage_bucket": "digilyceum-15c27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374030441897:android:ff7519a77a60143c",
+        "android_client_info": {
+          "package_name": "co.wa.digilyceum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374030441897-a896rhjafftj15qo0mrk9v7ghdurap1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXv9HRHeTJUCmRVom7Xoe1-g4vnKnHrNI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

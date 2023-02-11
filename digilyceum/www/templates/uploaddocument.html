@@ -1,0 +1,107 @@
+<ion-view title="upload document" id="upload-document">
+  <ion-nav-bar class="bar-positive set-nav-color" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button-clear set-btn-color" ng-click="goBack()">
+        <i class="icon ion-arrow-left-c"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content padding="true">
+    <div class="row item item-input">
+      <div class="col col-40 input-label">Age Proof:</div>
+      <div class="col col-60">
+        <div class="row">
+          <div class="col col-40 set-margin-top-17">
+            <button class="btn fileUpload ion-ios-camera roundbutton">
+                <input type="file" file-model="UploadAgeProof" class="upload">
+            </button>
+          </div>
+          <div class="col col-60">
+            <img ng-src="{{trustSrc(AgeProofObj.ageProofPhoto)}}" class="imgStyle">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row item item-input">
+      <div class="col col-40 input-label">Residence Proof:</div>
+      <div class="col col-60">
+        <div class="row">
+          <div class="col col-40 set-margin-top-17">
+            <button class="btn fileUpload ion-ios-camera roundbutton " ng-click="UploadResidenceProof()">
+                <input type="file" file-model="UploadResidenceProof" class="upload">
+            </button>
+          </div>
+          <div class="col col-60">
+            <img ng-src="{{trustSrc(ResidenceProofObj.residenceProofPhoto)}}" class="imgStyle">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row item item-input">
+      <div class="col col-40 input-label">Fees receipt:</div>
+      <div class="col col-60">
+        <div class="row">
+          <div class="col col-40 set-margin-top-17">
+            <button class="btn fileUpload ion-ios-camera roundbutton">
+                <input type="file" file-model="UploadFessReceipt" class="upload">
+            </button>
+          </div>
+          <div class="col col-60">
+            <img ng-src="{{trustSrc(FessReceiptObj.fessReceiptPhoto)}}" class="imgStyle">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row item item-input">
+      <div class="col col-40 input-label">Recent mark Sheet:</div>
+      <div class="col col-60">
+        <div class="row">
+          <div class="col col-40 set-margin-top-17">
+            <button class="btn fileUpload ion-ios-camera roundbutton">
+                <input type="file" file-model="UploadRecentMarkSheet" class="upload">
+            </button>
+          </div>
+          <div class="col col-60">
+            <img ng-src="{{trustSrc(RecentMarkSheetObj.recentMarkSheetPhoto)}}" class="imgStyle">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row item item-input">
+      <div class="col col-40 input-label">H.S.C mark Sheet:</div>
+      <div class="col col-60">
+        <div class="row">
+          <div class="col col-40 set-margin-top-17">
+            <button class="btn fileUpload ion-ios-camera roundbutton">
+                <input type="file" file-model="UploadHscMarkSheet" class="upload">
+            </button>
+          </div>
+          <div class="col col-60">
+            <img ng-src="{{trustSrc(HscMarkSheetObj.hscMarkSheetPhoto)}}" class="imgStyle">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row item item-input">
+      <div class="col col-40 input-label">I card:</div>
+      <div class="col col-60">
+        <div class="row">
+          <div class="col col-40 set-margin-top-17">
+            <button class="btn fileUpload ion-ios-camera roundbutton ">
+                <input type="file" file-model="UploadIcard" class="upload">
+            </button>
+          </div>
+          <div class="col col-60">
+            <img ng-src="{{trustSrc(IcardObj.IcardPhoto)}}" class="imgStyle">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row  marign-tp-10">
+      <div class="col col-100 textcenter">
+        <button class="button button-positive set-input-border set-btn-width" ng-click="goToSupporterdetailsPage()">Next</button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

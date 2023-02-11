@@ -1,0 +1,101 @@
+<ion-view title="Host Game View" id="host_game_view">
+  <ion-nav-bar class="bar-positive set-nav-color" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button-clear set-btn-color" ng-click="goBack()">
+        <i class="icon ion-arrow-left-c"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header" padding="true">
+    <div ng-show="showtext==true" class="set-txt-green margin-btm-10">
+      Game In Progress
+    </div>
+    <div ng-hide="game.state == 'leaderboard'">
+      <div class="row item item-input" id="venueEventEdit-input70">
+        <div class="input-label col col-40">Branch:</div>
+        <div class="col col-50">
+          <input type="text" ng-value="branch">
+        </div>
+      </div>
+      <div class="row item item-input margin-btm-20" id="venueEventEdit-input70">
+        <div class="input-label col col-40">Election Code:</div>
+        <div class="col col-50">
+          <input type="text" ng-value="Game_code">
+        </div>
+      </div>
+
+      <!-- <div class="margin-btm-20">
+                <h4>Tell your friends the Game Code to join the game</h4>
+            </div> -->
+
+      <div class="item item-divider">
+        students
+      </div>
+      <div class="row item item-input" id="venueEventEdit-input70" ng-repeat="player in game.users" ng-click="play(player[playerid])">
+        <div class="input-label col col-20 set-icon-size">
+          <i class="icon ion-person set-host-view-size"></i>
+        </div>
+        <div class="col col-60 input-label">
+          {{player.screen_name}}
+        </div>
+        <div class="col col-20 input-label set-color-green">
+          {{player.status}}
+        </div>
+
+      </div>
+      <div class="row" ng-if="!!game.users">
+        <div class="col col-100">
+          <button class="button button-assertive button-block" ng-click="verificationStep()">sen otp</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="button button-positive button-block" id="host-start-id" ng-click="startGame()" ng-hide="hidestopbtn==true">Click
+            to start Election </button>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <div class="col col-50" ng-hide="game.data.state=='question'">
+                    <button class="button button-assertive button-block" id="newWineList-button16" ng-click="goBack()"
+                        ng-hide="game.data.users==undefined">Exit
+                        Game
+                    </button>
+                </div> -->
+        <div class="col col-50" ng-show="game.state=='question'">
+          <button class="button button-assertive button-block" id="newWineList-button16" ng-click="endGame()">End
+            Election
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" ng-show="game.state == 'leaderboard'">
+      <div class="col col-100">
+        <div class="row event-border-style">
+          <div class="col col-80">
+            <h4>Candidate</h4>
+          </div>
+          <div class="col col-20">
+            <h4>Vote</h4>
+          </div>
+        </div>
+        <div class="row event-border-style" ng-repeat="candidate in candidates">
+          <div class="col col-80">
+            {{candidate.first_name}} {{candidate.last_name}}
+          </div>
+          <div class="col col-20 padding-left-13">
+            {{candidate.totalvote}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-100">
+            <button class="button button-positive button-block" id="newWineList-button16" ng-click="goToHomePage()">Main
+              Menu
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

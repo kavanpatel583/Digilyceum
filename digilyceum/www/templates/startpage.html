@@ -1,0 +1,88 @@
+<ion-view title="Digilyceum">
+  <ion-nav-bar class="bar-positive set-nav-color" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button-clear set-btn-color" ng-click="toggleLeft()">
+        <i class="icon ion-navicon-round"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+
+    <div class="row" style="flex-wrap: wrap;">
+      <!-- <div class="col col-50" ng-if="!!currentUser && currentUser.user_type==='admin_user'">
+        <div class="my-wines" ng-click="goToHostElectionPage()">
+          <div class="textcenter set-icon-position">
+            <i class="icon ion-email-unread set-icon-size" aria-hidden="true"></i>
+          </div>
+          <h3 class="textcenter set-label-position">Pending Request</h3>
+        </div>
+      </div> -->
+      <div class="col col-50" >
+        <div class="my-wines" ng-click="goToHostElectionPage()" >
+          <div class="textcenter set-icon-position">
+            <i class="icon ion-person-stalker set-icon-size" aria-hidden="true"></i>
+          </div>
+          <h3 class="textcenter set-label-position">Host Election</h3>
+        </div>
+      </div>
+      <div class="col col-50">
+        <div class="my-wines" ng-click="goToJoinElectionPage()">
+          <div class="textcenter set-icon-position set-icon-size">
+            <i class="icon ion-play"></i>
+          </div>
+          <h3 class="textcenter set-label-position">Join Election</h3>
+        </div>
+      </div>
+       <div class="col col-50">
+        <div class="my-wines" ng-click="goToMyAccountPage()">
+          <div class="textcenter set-icon-position">
+            <i class="icon ion-android-settings set-icon-size" aria-hidden="true"></i>
+          </div>
+          <h3 class="textcenter set-label-position">My Account</h3>
+        </div>
+      </div>
+
+      <!-- <div class="col col-50">
+        <div class="my-wines" ng-click="goToLocalEvent()">
+          <div class="textcenter set-icon-position">
+            <i class="icon ion-clipboard set-icon-size" aria-hidden="true"></i>
+          </div>
+          <h3 class="textcenter set-label-position">Feedback</h3>
+        </div>
+      </div>  -->
+      <div class="col col-50">
+        <div class="my-wines" ng-click="goToChatbotPage()">
+          <div class="textcenter set-icon-position">
+            <i class="icon ion-chatboxes set-icon-size" aria-hidden="true"></i>
+          </div>
+          <h3 class="textcenter set-label-position">Chatbot</h3>
+        </div>
+      </div>
+      <div class="col col-50">
+        <div class="my-wines" ng-click="openFeedbackPage()">
+          <div class="textcenter set-icon-position">
+            <i class="icon ion-chatbox set-icon-size" aria-hidden="true"></i>
+          </div>
+          <h3 class="textcenter set-label-position">Complain</h3>
+        </div>
+      </div>
+      <div class="col col-50">
+        <div class="my-wines" ng-click="goToCrDetailPage()">
+          <div class="textcenter set-icon-position">
+            <i class="icon ion-compose set-icon-size" aria-hidden="true"></i>
+          </div>
+          <h3 class="textcenter set-label-position">Enter Cr Details</h3>
+        </div>
+      </div>
+      <div class="col col-50">
+        <div class="my-wines" ng-click="goToGsDetailsPage()">
+          <div class="textcenter set-icon-position">
+            <i class="icon ion-compose set-icon-size" aria-hidden="true"></i>
+          </div>
+          <h3 class="textcenter set-label-position">Enter Gs Details</h3>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,45 @@
+<ion-view title="Supporter Details" id="supporter-details">
+  <ion-nav-bar class="bar-positive set-nav-color" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button-clear set-btn-color" ng-click="goBack()">
+        <i class="icon ion-arrow-left-c"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content padding="true">
+    <div class="row item item-input marign-tp-10" id="venueEventEdit-input70">
+      <div class="input-label col col-40">Enrollment No:</div>
+      <div class="col col-50">
+        <input type="number" placeholder="enrollment number" ng-model="user.enrollment_number">
+      </div>
+    </div>
+    <div class="row item item-input" id="venueEventEdit-input70">
+      <div class="input-label col col-40">First Name:</div>
+      <div class="col col-50">
+        <input type="text" placeholder="first name" ng-model="user.first_name">
+      </div>
+    </div>
+    <div class="row item item-input" id="venueEventEdit-input70">
+      <div class="input-label col col-40">Last Name:</div>
+      <div class="col col-50">
+        <input type="text" placeholder="last name" ng-model="user.last_name">
+      </div>
+    </div>
+    <div class="row item item-input" id="venueEventEdit-input70">
+      <div class="input-label col col-40">Semester:</div>
+      <div class="col col-50">
+        <input type="text" placeholder="semester" ng-model="user.semester">
+      </div>
+    </div>
+    <ion-checkbox class="bg-terms marign-tp-10" ng-model="user.selected" id="signup-checkbox1">I agree to terms and
+      conditions</ion-checkbox>
+    <div class="row">
+      <div class="col col-100 textcenter">
+        <button class="button button-positive set-input-border set-btn-width" ng-disabled="user.selected === false"
+          ng-click="goToUploadDocumentPage(user)">
+          Next
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
