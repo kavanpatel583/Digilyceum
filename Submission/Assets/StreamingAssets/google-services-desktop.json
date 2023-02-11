@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "985331974600",
+    "firebase_url": "https://smartar-730e1.firebaseio.com",
+    "project_id": "smartar-730e1",
+    "storage_bucket": "smartar-730e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985331974600:android:f79ed77ffbdda3c8",
+        "android_client_info": {
+          "package_name": "com.mycompany.sahil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985331974600-oc1qa36r0o9lff3vsk16vhpu0jt3oo16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3ziRHECKeQwh3nUZdLGTdz2VVYoovf_4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

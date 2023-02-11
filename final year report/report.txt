@@ -1,0 +1,227 @@
+ABSTRACT
+
+Every year GS/LR election is held and voting is done traditionally by ballot paper. This process consumes a lot of time of students as well as faculties. Our application called Digi-lyceum delivers prominent solution by making whole election process online.
+Visitors/Freshers who visit first time at universities/colleges find difficulty to reach their desire location. Unfortunately, there are least approaches are made towards indoor navigation. To deal with it, our application tries to provide one significant feature to guide users in augmented way to reach their destination in an unfamiliar indoor environment like universities, mall, museum, airport, MNCs etc.
+Students always find burden to ask administrative related doubt/inquiries due to having a long queue of students at admin department so, our artificial intelligence enabled chatbot helps students to give relevant and useful response of inquiries at anytime and anywhere.  
+CHAPTER 1: INTRODUCTION
+
+1.1: PROBLEM SUMMARY:
+
+    There are numerous facilities provided by several organizations to find outdoor location, while for indoor location there are least concerns were made on it. Nowadays in big infrastructures it is very difficult to find out desire location in less time like in college, shopping malls, museums etc. The major problem arises when visitors visit at unknown place for the first time as they are not aware about where their desire places are located for example, in big universities people who are visiting for the first time faces problem to find out certain spots.
+    Furthermore, students in colleges have various doubts/inquiries in their minds. To find out solutions their approach is to visit administration department. Unfortunately, they are not getting enough information from the staff and sometimes there are enormous students there so, students have to wait in long queue to make inquiry.
+    Secondly, in spite of living in digital world, several activities in college are done on paper which costs time and money like GS/LR election process.      
+These issues are motivating us to develop application that can get rid of these issues and provide reliable and meaningful solution.
+
+
+
+
+
+
+
+
+	
+1.2: AIM AND OBJECTIVES OF THE PROJECT :
+
+AIM: To develop an application which guides user to navigate in entire college and provide information of student’s queries also do online election process for GS/LR election.
+
+OBJECTIVES:
+•	The application do not require expensive infrastructure.
+•	Future maintenance cost would be nominal.
+•	The application consistently guide users to their destinations.
+•	To design attractive UI for better user experience.
+•	The application counts vote effectively.
+•	The response of inquiries would be relevant.
+1.3: BRIEF LITERATURE REVIEW AND PRIOR ART SEARCH :
+
+    To improve our operating efficiency of our project. We have been analyzed various literatures available like patents and other scholarly articles with benefits and drawbacks of augmented reality based indoor navigation and for chatbot. 
+   With recent research of advance technological facts and development occurring in our domain now solutions are made possible for improving indoor navigation which were not possible with technologies available, few years back.
+
+1.3.1: PSAR (PATENT SEARCH ANALYSIS REPORT) SUMMARY:    During Patent Search and Analysis Report we have found following details :
+
+We analyzed various methods for indoor navigation using augmented reality through PSAR which are listed below:
+•	US6625299B1-   In this patent, a tracker system within the AR technology registers the virtual world to the real world to integrate virtual and real information in a manner usable by the observer.
+•	US9953461B2- Obtain starting coordinates by detecting a positioning landmark and find a path which has shortest distance between the nodes according to the Dijkstra’s algorithm.
+•	US20100039927A1- Signal receiving unit receives signals from wireless communication access points and measuring strengths of received signals. Position estimating unit estimating a current position by comparing the strengths of signal measured by the signal receiving unit with a table recording strengths.
+
+
+•	US20120143495A1- Indoor navigation carried out using sensor readings
+and in some case magnetic maps of the interiors of buildings stored on the smartphone. 
+
+We also analyzed other methods which are listed below:
+Available indoor positioning techniques
+Bluetooth low energy (Beacon)
+Bluetooth low energy beacons are basically battery driven devices. It’s function is to only transmit bluetooth signal but it can not receive signal back. A mobile device receives the transmitted signals from beacons and measures the distance from various beacons which are located in indoor location. In this method we found out various following drawbacks:
+•	Fluctuations in the Bluetooth signal strength.
+•	BLE beacons send out signals intermittently, not continuously so it leads to delay.
+•	Phone antennas switch on and off intermittently too, to save battery power.
+•	To get accurate location more beacons required which can cost more.
+•	It covers small distance.
+
+Magnetic Field Detection
+Magnetic field detection using the compass sensor on a device can also be used for indoor positioning. A so called “fingerprinting” technology is used to map the magnetic fields on the venue and then the device can use that map to find it’s indoor location. This technology can only be applied in certain circumstances where the magnetic fields indoor are stable.
+The major disadvantage is when infrastructure is changed then magnetic field of that area changes and gives inaccurate location
+Chat-Bot
+•	US20140122083- Chatbot includes a processor, an interactive dialogue interface, a knowledge database and one or more scripts. The script can represent contextual input/output messages and can be used to create, add or modify knowledge entries in the knowledge database.
+•	US20180075014A1- . In response to the user input message, the chatbot processor is used to generate an output message that is based one or more language elements, which may be extensions of AIML(Artificial Intelligence Markup Language ). 
+Through other patents we analyzed and we find out two main parts to create Chat-Bot.
+
+1)NLP:- Using Natural Language Processing  we breaks sentences into words.
+               It helps to identify keywords and entity. This is hard step to complete
+               but now a days it is feasible to complete.
+
+
+2)Machine Learning:- These system have to train first that what kind of answer
+                                        user want. First of all using machine learning we need to 
+                                        train our model adding main keywords and entity’s. We
+                                        creating dataset for answer. Using algorithms it will find
+                                        answer corresponding to entered entity’s by user.
+
+
+
+
+
+
+
+
+
+CHAPTER 2: Requirement ANALYSIS, DESIGN             METHODOLOGY AND IMPLEMENTATION STRATEGY:
+
+2.1 Requirement Analysis
+ Requirements analysis encompasses those tasks that go into determining the needs or conditions to meet for our project. We analyzed our functional and non-functional requirements which are listed below. 
+
+2.1.1 Functional Requirements:
+
+•	Send OTP to user prior to vote.
+•	System shall have record of users who joined in election. 
+•	System shall display result of winning candidate.
+•	Users should modify their uploaded documents.
+
+
+
+                         2.1.2Non - Functional Requirements:
+
+•	Load time should be less.
+•	The graphical user interface shall have a consistent look and feel.
+•	Application should have compatibility with mobile hardware.
+•	Application should have login & password credentials for security. 
+
+
+ACTIVITY DIAGRAM 
+Activity diagram focuses on representing various activities of processing and their sequence of activities. Activity diagram is used to show the work flow of a system.
+
+SEQUENCE DIAGRAM (ELECTION)
+A Sequence diagram is an interaction diagram. It emphasis on the sequence of messages rather than relationship between objects. It shows the message exchanged among a set of objects over time.
+                                             CLASS DIAGRAM 
+A class diagram captures the static structure of system by characterizing the objects in the system, the relationship between the objects, and the attributes and operations for each class of objects.
+2.2.1 Method used for product development
+
+   We have used Iterative model for our application development.
+   In iterative life cycle model we specified necessary requirements of our project. And started development by specifying and implementing just part of the software, which can then be reviewed in order to identify further requirements. After completion of one cycle it is then repeating and producing a new version of the software for each cycle of the model.  
+   
+                     
+
+
+
+Advantages of Iterative model:
+•	In iterative model we are building and improving the product step by step. Hence in early stages we are able to find defects.
+•	In iterative model we can get the reliable user feedback. When presenting design of the product to users for their feedback, we are effectively asking them to imagine how the product will work.
+•	In iterative model less time is spent on documentation and more time is given for designing.
+
+Disadvantages of Iterative model:
+•	Design issues may emerge because not all requirements are gathered up front for the entire lifecycle.
+•	It is not suitable for smaller projects.
+
+
+ 2.2.2 Tools (Technology) used
+Materials used
+Android Device
+
+Smart phone with Android (5.0.0) or above will used by user for mapping image to get indoor location. Apart from that active internet connection for online voting and chatbot.
+
+
+
+
+
+VU-Markers
+
+Augmented reality markers or other term VU-markers are visual cues which trigger the display of the virtual information. Markers are normal image or we can say small objects which are trained beforehand so that they can be recognized later in the camera stream.  After a marker is recognized, its position are derived from visual cues and transferred to the virtual information.
+
+
+Technologies Used
+Vuforia engine in Unity 
+   Vuforia is an augmented reality software development kit (SDK) for mobile devices that allows the creation of augmented reality applications. It basically uses computer vision technology to recognize and track planar images (Image Targets) and simple 3D objects, such as boxes, in real time. This image registration capability enables developers to position and orient virtual objects, such as 3D models and other media, in relation to real world images when they are viewed through the camera of a mobile device. 
+   Unity integrates the Vuforia Engine, making it even easier to create cutting edge augmented reality experiences for handheld devices.
+Mapbox
+An open source mapping platform for custom designed maps. Basically, it is the location data platform for mobile and web applications. It provides building blocks to add location features like maps, search, and navigation into any experience you create.
+
+QGIS
+QGIS which was formally known as Quantum GIS is an open- source cross-platform and free desktop geographical information system (GIS) application which helps in viewing, editing and assessing of geospatial data. This software (QGIS) enables users to assess and edit special information, in addition to creating and making available graphical maps. 
+
+IONIC (Mobile app framework)
+Ionic Framework is paramount open source software development kit (SDK), used for developing hybrid mobile applications with JavaScript, CSS and HTML5. Ionic largely focused on the look, feel and UI interactions of an app. 
+
+Firebase- Google (Real time database)
+Firebase helps us a real time database. We used an API that allows application data to be synchronized across clients and stored on Firebase's cloud. The company provides us libraries that enable integration with Android.
+
+AngularJS- Google
+AngularJS (extends HTML with new attributes) is a JavaScript-based open-source front-end web application framework, which helped us to make dynamic web application. 
+
+
+Chapter 3: Implementation methodology through Design driven canvas exercise   
+Design is something which can be used for gaining a goal by implementing our system. Design thinking gives discovery of knowledge and in curiosity.
+AEIOU Framework:
+In this AEIOU canvas activity student needs to become the user and actually live their experiences. During the immersion process, students and their guide can get insights about the non-codified and undocumented needs of the contemporary user/industry. We have observed people in general from all walks of life. Few locations we have observed which are corridor, classrooms, staffroom, seminar hall etc.
+
+AEIOU stands for 5: 
+•	Activity
+•	Environment
+•	Interactions
+•	Objects
+•	User
+
+EMPATHY MAPPING CANVAS
+This Empathy canvas represents the main users you have observed who might need your system. The other person communicating with the user known as stakeholders and the activities he should perform. This canvas contains happy and sad story one felt/suffered at the location.
+ IDEATION CANVAS 
+
+Ideation canvas helped us to think about different potential ideas for our project which involved multiple users.
+It helped us to understand different activities in a better way according to its context.
+PRODUCT DEVELOPMENT CANVAS
+
+It contains purpose, features and functions of our project along with the components involved.
+CHAPTER 5: IMPLEMENTATION 
+In previous semester, we made registration process for students in our application.
+We provided one functionality in that, host(person) hosts election and generate one random code that student have to enter it to join election. At the end, application counts votes and display results. For database we converted our student records into JSON form. 
+For indoor navigation we gathered all possible methods by which we can make our indoor navigation. We created VU marks when VU marks are recognized by mobile camera it displays augmented view. Apart from that, we converted our college’s floor plan image into geo-referenced form that is require by mapbox. 
+Augmented Reality image mapping
+
+As shown in following figure, we took a VU mark now we are putting android device’s camera on it and immediately it recognize image and shows result. 
+CHAPTER 6: SUMMARY
+        
+    Scope of future work
+•	For chatbot, it should consist all aspect of questions that user will ask
+•	Find optimum approach for reliable indoor navigation 
+
+
+     Conclusion
+Here, we made an android application which introduces the feature of online voting for GS/LR election. It deal with, traditional ballot paper voting system which is time and energy consuming also we implemented indoor navigation which will help to new visitors to find their desire location. Our chatbot will help students to ask their queries and get relevant response  at anytime and anywhere   
+
+
+
+
+
+
+
+
+
+
+
+Chapter 7 REFERENCES
+
+1.	https://patents.google.com/
+2.	https://stackoverflow.com/questions/47608894/indoor-navigation-app-in-augmented-reality
+3.	https://answers.unity.com/index.html
+4.	https://stackoverflow.com/questions/tagged/ionic-framework
+5.	https://www.quora.com/search?q=how+to+connect+database+in+firebase
+6.	https://www.udemy.com/build-an-augmented-reality-android-app-in-1-hour/
+7.	https://chatbotslife.com/dialogflow-restaurant-bot
+8.	https://ionicthemes.com/tutorials/about/building-a-complete-mobile-app-with-ionic-framework
